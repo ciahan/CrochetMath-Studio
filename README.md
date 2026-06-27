@@ -23,7 +23,7 @@ When I handed it in, my teacher pulled out a ruler. She measured the wave.
 
 It was exact.
 
-She kept it. It's still in her desk drawer.
+He kept it. It's still in his desk drawer.
 
 That night is why I built CrochetMath Studio — so anyone can do in seconds what took me all night to figure out. And it's why I know that for me, math, code, and making things with my hands are not three different interests. They're the same thought, expressed three different ways.
 
@@ -79,7 +79,7 @@ That column gets the "on" color. Every other stitch gets the "off" color.
 No install required:
 
 ```bash
-git clone https://github.com/yourusername/crochetmath
+git clone https://github.com/ciahan/crochetmath
 open crochetmath/index.html
 ```
 
@@ -102,6 +102,6 @@ open crochetmath/index.html
 
 ## About
 
-Built by Ciara F — mathematician, crocheter, and computer science student.
+Built by Ciara Feng — a high school student in the STEM program at Montgomery Blair, where math, making, and code turned out to be the same thing.
 
 The sine scarf lived as a physical object long before it became software. CrochetMath Studio is the attempt to close that loop: to make the math visible, holdable, and shareable.
