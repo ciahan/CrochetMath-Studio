@@ -9,7 +9,7 @@ A web app that transforms mathematical functions into crochet-ready grid pattern
 ---
 
 ![The sine wave scarf — gray yarn tracing a mathematically exact sine curve on a navy blue background](scarf.jpeg)
-*The sine wave scarf that started this project. My math teacher measured the wave. It was exact. She kept it.*
+*The sine wave scarf that started this project. My math teacher measured the wave. It was exact. He kept it.*
 
 ---
 
