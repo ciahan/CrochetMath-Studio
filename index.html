@@ -1132,22 +1132,63 @@ function renderSavedGallery() {
   title.style.display = '';
   grid.innerHTML = '';
   savedPatterns.forEach((p, i) => {
-    const item = document.createElement('div'); item.className='g-item';
+    const item = document.createElement('div');
+    item.className = 'g-item';
+    item.dataset.index = i;
+
+    // Draw thumbnail with fixed cell size, no canvas-area dependency
     const c = document.createElement('canvas');
-    const CW = Math.max(2, Math.floor(180 / p.cols));
-    const CH = Math.max(2, Math.floor(140 / p.rows));
+    const CW = Math.max(2, Math.floor(120 / p.cols));
+    const CH = Math.max(2, Math.floor(100 / p.rows));
     c.width  = p.cols * CW;
     c.height = p.rows * CH;
-    drawGrid(c, p);
+    const ctx = c.getContext('2d');
+    ctx.fillStyle = p.c2;
+    ctx.fillRect(0, 0, c.width, c.height);
+    // draw pattern directly without drawGrid
+    for (let r = 0; r < p.rows; r++) {
+      const y = getY(p.fn, r, p.rows);
+      let col = Math.round((y + 1) / 2 * (p.cols - 1));
+      const reps = p.repeat ? 3 : 1;
+      const segW = Math.floor(p.cols / reps);
+      for (let rep = 0; rep < reps; rep++) {
+        let c2 = col % segW;
+        if (p.mirror) c2 = Math.round(segW / 2 - Math.abs(c2 - segW / 2));
+        const offset = rep * segW;
+        for (let t = 0; t < (p.thick||1); t++) {
+          const fc = Math.min(p.cols - 1, offset + c2 + t);
+          ctx.fillStyle = p.c1;
+          ctx.fillRect(fc * CW, r * CH, CW - 1, CH - 1);
+          if (p.mirror) {
+            const mc = offset + segW - 1 - c2 - t;
+            if (mc >= offset && mc < offset + segW) {
+              ctx.fillStyle = p.c1;
+              ctx.fillRect(mc * CW, r * CH, CW - 1, CH - 1);
+            }
+          }
+        }
+      }
+    }
     item.appendChild(c);
-    const lbl = document.createElement('div'); lbl.className='g-label'; lbl.textContent=p.label || p.fn || 'pattern';
-    const del = document.createElement('div'); del.className='g-tag';
+
+    const lbl = document.createElement('div');
+    lbl.className = 'g-label';
+    lbl.textContent = p.label || p.fn || 'pattern';
+
+    const del = document.createElement('div');
+    del.className = 'g-tag';
     const removeBtn = document.createElement('span');
     removeBtn.textContent = '× remove';
     removeBtn.style.cssText = 'cursor:pointer;color:var(--purple)';
-    removeBtn.addEventListener('click', (e) => { e.stopPropagation(); deleteSaved(i); });
+    removeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const idx = parseInt(item.dataset.index);
+      deleteSaved(idx);
+    });
     del.appendChild(removeBtn);
-    item.appendChild(lbl); item.appendChild(del);
+
+    item.appendChild(lbl);
+    item.appendChild(del);
     grid.appendChild(item);
     item.addEventListener('click', () => loadPreset(p));
   });
