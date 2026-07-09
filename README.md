@@ -1,6 +1,9 @@
 # CrochetMath Studio
 
-**Turn equations into crochet patterns you can actually make.**
+**Visualizing Mathematics Through Fiber Art**
+
+A web app that transforms mathematical functions into crochet-ready grid patterns. Pick a function, adjust your grid and yarn colors, watch the pattern animate stitch by stitch, then export row-by-row instructions you can take directly to your needles.
+
 
 🔗 **[Live app →](https://ciahan.github.io/CrochetMath-Studio/)**
 
@@ -8,11 +11,19 @@
 
 ---
 
-## The idea
+## What inspired this
 
-A sine wave scarf from a math assignment became this.
+My math teacher gave us two hours to express a mathematical concept through art. Most students drew graphs or made posters. I decided to crochet the sine function.
 
-What started as a single crochet scarf — plotting `sin(x)` row by row to turn a wave into a stitch pattern — grew into a full studio for turning math into fiber art. Pick a function, tweak its shape, and watch it become a row-by-row stitch chart you can actually crochet from. It's math, made tangible.
+I had never designed a crochet pattern before. I spent the night teaching myself how to map sin(x) to stitch positions — working out the coordinate transformation, the column mapping, the row-by-row logic. I finished at dawn.
+
+When I handed it in, my teacher pulled out a ruler. He measured the wave.
+
+It was exact.
+
+He kept it. It's still in his desk drawer.
+
+That night is why I built CrochetMath Studio — so anyone can do in seconds what took me all night to figure out. And it's why I know that for me, math, code, and making things with my hands are not three different interests. They're the same thought, expressed three different ways.
 
 ## Features
 
