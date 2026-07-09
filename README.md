@@ -19,7 +19,7 @@ My math teacher gave us two hours to express a mathematical concept through art.
 
 I had never designed a crochet pattern before. I spent the night teaching myself how to map sin(x) to stitch positions — working out the coordinate transformation, the column mapping, the row-by-row logic. I finished at dawn.
 
-When I handed it in, my teacher pulled out a ruler. She measured the wave.
+When I handed it in, my teacher pulled out a ruler. He measured the wave.
 
 It was exact.
 
