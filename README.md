@@ -101,10 +101,8 @@ Mirror mode reflects that column across the grid's center, and Repeat mode tiles
 
 Found a bug, or have an idea for a new function or shape? Open an issue or a pull request. Since it's a single-file-per-concern static app, most changes only touch `app.js` (logic) or `styles.css` (appearance).
 
-## License
+## About
 
-MIT — see [LICENSE](LICENSE) for details.
+Built by Ciara Feng — a high school student in the STEM program at Montgomery Blair, where math, making, and code turned out to be the same thing.
 
-## Credits
-
-Built by [Ciahan](https://github.com/ciahan), starting from one very literal interpretation of a math homework assignment.
+The sine scarf lived as a physical object long before it became software. CrochetMath Studio is the attempt to close that loop: to make the math visible, holdable, and shareable.
