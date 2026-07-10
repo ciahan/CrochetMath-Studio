@@ -9,7 +9,7 @@ Pick a function, tweak your grid and yarn colors, and export row-by-row stitch i
 ---
 
 ![The sine wave scarf — gray yarn tracing a mathematically exact sine curve on a navy blue background](scarf.jpeg)
-*The scarf that started this project. My math teacher measured the wave with a ruler. It was exact. They kept it — it's still in their desk drawer.*
+*The scarf that started this project. My math teacher measured the wave with a ruler. It was exact. He kept it — it's still in his desk drawer.*
 
 ---
 
@@ -21,7 +21,7 @@ I had never designed a crochet pattern before. I spent the night teaching myself
 
 When I handed it in, my teacher pulled out a ruler and measured the wave.
 
-It was exact. They kept it — it's still in their desk drawer.
+It was exact. He kept it — it's still in his desk drawer.
 
 That night is why I built CrochetMath Studio — so anyone can do in seconds what took me all night to figure out. And it's why I know that for me, math, code, and making things with my hands aren't three different interests. They're the same thought, expressed three different ways.
 
@@ -60,7 +60,7 @@ For each row `i`, the app computes:
 ```
 x   = (i / rows) × 2π
 y   = f(x)                              ← the chosen function, output ∈ [−1, 1]
-col = round((y + 1) / 2 × (cols − 1))  ← map to a column index
+col = round((y + 1) / 2 × (cols − 1))   ← map to a column index
 ```
 
 That column gets the "on" color; every other stitch in the row gets the "off" color. Repeating this down every row traces the function's shape into the grid, one stitch at a time.
@@ -131,7 +131,7 @@ Found a bug, or have an idea for a new function or shape? Open an issue or a pul
 
 ## License
 
-All rights reserved. This project is shared publicly for viewing and portfolio purposes, but the code may not be copied, modified, or redistributed elsewhere without permission. (Contributing a pull request back to this repo is welcome and different from that — see below.)
+All rights reserved. This project is shared publicly for viewing and portfolio purposes, but the code may not be copied, modified, or redistributed elsewhere without permission. (Contributing a pull request back to this repo is welcome and different from that — see the Contributing section above.)
 
 ## About
 
