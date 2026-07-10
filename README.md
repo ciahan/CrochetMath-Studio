@@ -7,7 +7,7 @@
 ---
 
 ![The sine wave scarf — gray yarn tracing a mathematically exact sine curve on a navy blue background](scarf.jpeg)
-*The scarf that started this project. My math teacher measured the wave with a ruler. It was exact. They kept it — it's still in their desk drawer.*
+*The scarf that started this project. My math teacher measured the wave with a ruler. It was exact. He kept it — it's still in his desk drawer.*
 
 ---
 
@@ -19,7 +19,7 @@ I had never designed a crochet pattern before. I spent the night teaching myself
 
 When I handed it in, my teacher pulled out a ruler and measured the wave.
 
-It was exact. They kept it — it's still in their desk drawer.
+It was exact. He kept it — it's still in his desk drawer.
 
 That night is why I built CrochetMath Studio — so anyone can do in seconds what took me all night to figure out. And it's why I know that for me, math, code, and making things with my hands aren't three different interests. They're the same thought, expressed three different ways.
 
@@ -129,7 +129,7 @@ Found a bug, or have an idea for a new function or shape? Open an issue or a pul
 
 ## License
 
-MIT — see [LICENSE](LICENSE) for details.
+All rights reserved. This project is shared publicly for viewing and portfolio purposes, but the code may not be copied, modified, or redistributed without permission.
 
 ## About
 
