@@ -4,7 +4,7 @@ export default function About () {
             <h1> About CrochetMath Studio and the Scarf that Inspired this Project </h1>
             <div className="flex flex-col items-center">
                 <img 
-                    src="SineWaveScarf.jpeg"
+                    src="/CrochetMath-Studio/SineWaveScarf.jpeg"
                     style={{ height: "300px", width: "auto" }}
                 />
             </div>
@@ -36,7 +36,7 @@ export default function About () {
             </p>
             <div className="flex flex-col items-center">
                 <img 
-                    src="RowPatternInstructions.png"
+                    src="/CrochetMath-Studio/RowPatternInstructions.png"
                     style={{ height: "500px", width: "auto" }}
                 />
             </div>
